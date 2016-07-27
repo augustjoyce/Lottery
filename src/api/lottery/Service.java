@@ -7,8 +7,8 @@ import java.util.List;
  */
 public interface Service {
     Long performNewLottery(Lottery.Type type);// returns lottery number
-    List<impl.lottery.Ticket> getLotteryTickets(Long lotteryNumber);
-    Double takeMoney(Long lotteryNumber, impl.lottery.Ticket ticket);
+    List<Ticket> getLotteryTickets(Long lotteryNumber);
+    Double takeMoney(Long lotteryNumber, Ticket ticket);
     void endLottery(Long lotteryNumber);
     /**
      * This class should maps lottery numbers to lotteries.

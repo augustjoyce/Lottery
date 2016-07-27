@@ -8,10 +8,10 @@ import java.util.List;
 public interface Lottery {
     Long getLotteryNumber(); // unique lottery number
     Type getType();
-    List<impl.lottery.Ticket> getLotteryTickets();
+    List<Ticket> getLotteryTickets();
     void performLottery();
     int [][] getWinCombinations();
-    Double takeMoney(impl.lottery.Ticket ticket);
+    Double takeMoney(Ticket ticket);
 
     enum Type {
         INSTANT, LOTTO;
